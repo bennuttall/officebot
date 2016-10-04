@@ -9,7 +9,7 @@ def event_filter(event):
 def process_instruction(instruction):
     if instruction in instructions:
         instructions[instruction]()
-        print(event['text'])
+        print(instruction)
 
 slack = SlackClient(token)
 robot = CamJamKitRobot()
