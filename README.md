@@ -29,7 +29,7 @@ You will need to register an app at [api.slack.com/apps](https://api.slack.com/a
 You also need to find the channel ID of the channel you wish to listen to. To do this, open a Python shell and type:
 
 ```python
-from slack_client import SlackClient
+from slackclient import SlackClient
 slack = SlackClient("YOUR TOKEN")
 slack.server.channels.find("CHANNEL")
 ```
